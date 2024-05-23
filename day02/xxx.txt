@@ -171,6 +171,43 @@ Each node in the tree corresponds to a part of the document, such as an element,
 
 
 
+-- 11 What is the diferent between Argumented & Parameter ???
+
+
+
+-- 12 map() function for Array or Object ???
+
+only for Array
+
+map() -> return new Array
+
+	const originalArray = [1, 2, 3, 4, 5];
+
+	const squaredArray = originalArray.map(function(number) {
+    		return number ** 2;
+	});
+
+	console.log(squaredArray); // [1, 4, 9, 16, 25]
+
+
+forEach() -> not return new Array
+
+	const fruits = ['apple', 'banana', 'orange'];
+
+	fruits.forEach(function(fruit) {
+    		console.log(fruit);
+	});
+
+	// Output:
+	// apple
+	// banana
+	// orange
+
+
+
+
+
+
 
 
 
