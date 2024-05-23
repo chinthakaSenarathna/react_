@@ -161,6 +161,14 @@ const
 	can't re-declare & update
 
 
+-- 09 what is the DOM ???
+
+The DOM is a document model loaded in the browser, representing a web page as a node tree (or DOM tree).
+Each node in the tree corresponds to a part of the document, such as an element, text string, or comment1.                            
+
+
+-- 10 what is the higher order function ???
+
 
 
 
