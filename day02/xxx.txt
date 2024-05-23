@@ -1,0 +1,192 @@
+-- 01 what is the HTTP ?
+
+HTTP stands for hyper text transfer protocols
+it is roles,
+	sending request
+	recieving response
+HTTP basicaly define,
+	how the request send to the server
+	how the response recieve from the server
+
+
+-- 02 what is the diferent between HTTP & HTTPS
+
+HTTP  - without Encripted
+HTTPS - with Encripted
+
+
+-- 03 what is the <!DOCTYPE> in HTML ?????
+
+
+-- 04 what is the <meta> tag ????
+
+
+-- 05 what is the semantic elements/tags in HTML ????
+
+
+-- 06 what is the usefull thing by using semantic elements/tags ????
+
+
+-- 07 what is the atributes ???
+
+attributes provide additional information about HTML elements
+
+
+-- 08 what is the diferent between element & tag  ???
+
+elements represent the actual content (such as paragraphs, headings, images, etc.
+tags are the markup used to define and enclose those elements in HTML
+
+
+-- 09 what is the diferent of div & span ???
+
+
+-- 10 what is the inline element & block element ???
+
+Block-level elements:
+	Always start on a new line.
+	Automatically add some space (a margin) before and after the element.
+	Take up the full width available (stretch out to the left and right as far as they can).
+	Common examples include <p>, <div>, <h1> to <h6>, and <ul>12.
+	Useful for structuring the main content of a webpage.
+
+Inline elements:
+	Do not start on a new line.
+	Only take up as much width as necessary.
+	Tolerate other HTML elements next to them.
+	Examples include <span>, <a>, <em>, and <strong>1.
+	Used within block-level elements to style or format specific parts of the content.
+
+
+-- 11 what is the specificity css ???
+
+<p id="example" class="myClass">Hello, world!</p>
+
+Rule 1: #example { color: red; } (ID selector)
+Rule 2: .myClass { color: blue; } (Class selector)
+Rule 3: p { color: green; } (Type selector)
+
+The specificity values:
+	Rule 1: 1-0-0
+	Rule 2: 0-1-0
+	Rule 3: 0-0-1
+
+
+
+
+
+
+-- JavaScript
+
+-- 01 JavaScript is single thread or multiple thread ???
+
+JavaScript runs on a single thread, meaning it processes one task at a time.
+The event loop’s single-threaded architecture might seem inefficient initially.
+While Node.js itself is single-threaded, it introduced worker_threads in version 10.5.0.
+Worker threads allow parallel execution of JavaScript by creating multiple V8 engines that share memory.             
+
+
+
+-- 02 How the handel Asynchronous task ???
+
+
+
+-- 03 How the handel Synchronous task ???
+
+event loop
+call back queue
+
+
+-- 04 diferent types in javascript ???
+
+primitive
+	string
+	number
+	boolean
+	null
+	undefined -> let uninitializedVariable;
+	symbols   -> const uniqueKey = Symbol("description");
+
+non-oprimitive
+	object
+	array
+
+
+-- 05 what is the diferent between primitive & non-primitive ???
+
+Primitive Data Types:
+	These are predefined data types provided by JavaScript
+
+let x = 42; // Primitive value
+let y = x;  // Copy of the value
+y = 10;     // Does not affect x
+
+
+Non-Primitive Data Types:
+	These are derived from primitive data types.
+
+let obj1 = { name: 'Alice' }; // Non-primitive (object)
+let obj2 = obj1;             // Both refer to the same object
+obj2.name = 'Bob';           // Affects obj1 as well
+
+
+
+
+-- 06 what is the variable ???
+
+container
+
+-- 07 how many ways, we can declare javascript variables ???
+
+let
+var
+const
+
+
+-- 08 var VS let VS const
+
+var
+	globally scoped or function scoped.
+	re-declare & update
+
+
+let
+	block scoped
+	can't re-declare
+	can update
+
+
+const
+	block scoped
+	can't re-declare & update
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
