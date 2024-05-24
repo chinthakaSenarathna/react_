@@ -185,12 +185,26 @@
 
 // 04
 
-// name is Global variable in JavaScript
-// console.log(name); // -> Jhon
-// var name = 'Jhon';
+// // name is Global variable in JavaScript
+// // console.log(name); // -> Jhon
+// // var name = 'Jhon';
+
+// // console.log(name); // -> ReferenceError
+// // let name = 'Jhon';
 
 // console.log(name); // -> ReferenceError
-// let name = 'Jhon';
+// const name = 'Jhon';
 
-console.log(name); // -> ReferenceError
-const name = 'Jhon';
+
+
+// 05
+
+var x = 20;
+
+function foo(){
+    console.log(x); // -> undefine
+    console.log(this.x); // -> access global scope value
+    var x = 10;
+}
+
+foo();
