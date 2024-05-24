@@ -175,8 +175,22 @@
 
 // 03
 
-console.log(a);
-// x is hoisted,
-var a = 5;    // -> undefined
-// x is not hoisted,
-// let a = 5; // -> ReferenceError
+// console.log(a);
+// // x is hoisted,
+// var a = 5;    // -> undefined
+// // x is not hoisted,
+// // let a = 5; // -> ReferenceError
+
+
+
+// 04
+
+// name is Global variable in JavaScript
+// console.log(name); // -> Jhon
+// var name = 'Jhon';
+
+// console.log(name); // -> ReferenceError
+// let name = 'Jhon';
+
+console.log(name); // -> ReferenceError
+const name = 'Jhon';
