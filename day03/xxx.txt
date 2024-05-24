@@ -1,0 +1,7 @@
+------------------------- JavaScript ---------------------------
+
+-- 01 JavaScript Event Deligation ???
+
+Event delegation in JavaScript is a technique,
+where you attach a SINGLE EVENT HANDLER TO A PARENT ELEMENT to handle event on its CHILD ELEMENTS.												 
+
