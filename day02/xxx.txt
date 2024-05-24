@@ -213,6 +213,12 @@ undefine ->
 
 not define ->
 	is an error condition in JavaScript.
+	
+
+
+-- 14 In JavaScript, strings are immutable ???
+
+
 
 
 

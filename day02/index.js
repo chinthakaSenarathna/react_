@@ -199,12 +199,35 @@
 
 // 05
 
-var x = 20;
+// var x = 20;
 
-function foo(){
-    console.log(x); // -> undefine
-    console.log(this.x); // -> access global scope value
-    var x = 10;
-}
+// function foo(){
+//     console.log(x); // -> undefine
+//     console.log(this.x); // -> access global scope value
+//     var x = 10;
+// }
 
-foo();
+// foo();
+
+
+
+// 06
+// In JavaScript, strings are immutable,
+
+let userName = "my name is Bikash"
+
+let words = userName.split(' ');
+
+let convertToUpperCase = words.map(word => word.charAt(0).toUpperCase() + word.slice(1));
+// map()     -> return new array,
+// forEach() -> not return new array,
+// console.log(convertToUpperCase);
+
+let newUserName = convertToUpperCase.join(' ');
+
+console.log(newUserName);
+
+
+// const str = 'captain Picard';
+// const caps = str.charAt(0).toUpperCase() + str.slice(1);
+// console.log(caps); // 'Captain Picard'
