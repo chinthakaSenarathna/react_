@@ -113,25 +113,70 @@
 
 // map()
 
-const originalArray = [1, 2, 3, 4, 5];
+// const originalArray = [1, 2, 3, 4, 5];
 
-const squaredArray = originalArray.map(function(number) {
-    return number ** 2;
-});
+// const squaredArray = originalArray.map(function(number) {
+//     return number ** 2;
+// });
 
-console.log(squaredArray); // [1, 4, 9, 16, 25]
+// console.log(squaredArray); // [1, 4, 9, 16, 25]
 
 
 
 // forEach()
 
-const fruits = ['apple', 'banana', 'orange'];
+// const fruits = ['apple', 'banana', 'orange'];
 
-fruits.forEach(function(fruit) {
-    console.log(fruit);
-});
+// fruits.forEach(function(fruit) {
+//     console.log(fruit);
+// });
 
-// Output:
-// apple
-// banana
-// orange
+// // Output:
+// // apple
+// // banana
+// // orange
+
+
+
+// --------------------------------------------------------------------------
+
+// 01
+
+// function foo(){
+//     var x = 10;
+//     console.log(x); // 10
+// }
+
+// foo();
+// console.log(x) // undefined
+
+
+
+
+// 02
+
+
+// block scope
+// {
+//     let a =1;
+//     let b = 2;
+
+//     // var a =1;
+//     // var b = 2;
+
+//     console.log(a);
+//     console.log(b);
+// }
+
+// console.log(a)
+// console.log(b)
+
+
+
+// 03
+
+console.log(a);
+// x is hoisted,
+var a = 5;    // -> undefined
+// x is not hoisted,
+// let a = 5; // -> ReferenceError

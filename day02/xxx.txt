@@ -205,6 +205,14 @@ forEach() -> not return new Array
 
 
 
+-- 13 undefine VS not define ???
+
+undefine ->
+	is the data type in JavaScript.
+	When a variable is declared but hasn’t been assigned any value yet, it is considered “undefined.”
+
+not define ->
+	is an error condition in JavaScript.
 
 
 
