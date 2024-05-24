@@ -214,20 +214,52 @@
 // 06
 // In JavaScript, strings are immutable,
 
-let userName = "my name is Bikash"
+// let userName = "my name is Bikash"
 
-let words = userName.split(' ');
+// let words = userName.split(' ');
 
-let convertToUpperCase = words.map(word => word.charAt(0).toUpperCase() + word.slice(1));
-// map()     -> return new array,
-// forEach() -> not return new array,
-// console.log(convertToUpperCase);
+// let convertToUpperCase = words.map(word => word.charAt(0).toUpperCase() + word.slice(1));
+// // map()     -> return new array,
+// // forEach() -> not return new array,
+// // console.log(convertToUpperCase);
 
-let newUserName = convertToUpperCase.join(' ');
+// let newUserName = convertToUpperCase.join(' ');                                                                                                         
 
-console.log(newUserName);
+// console.log(newUserName);
 
 
-// const str = 'captain Picard';
-// const caps = str.charAt(0).toUpperCase() + str.slice(1);
-// console.log(caps); // 'Captain Picard'
+// // const str = 'captain Picard';
+// // const caps = str.charAt(0).toUpperCase() + str.slice(1);
+// // console.log(caps); // 'Captain Picard'
+
+
+
+// ------------------------------------------------------------------------------------------
+
+let URL = 'https://jsonplaceholder.typicode.com/users';
+let div1 = document.getElementById('div1');
+let div2 = document.getElementById('div2');
+// console.log(div);
+
+async function getData(){
+    let response = await fetch(URL);
+    let responseInJson = await response.json();
+    console.log(responseInJson);
+    // console.log(responseInJson[0]);
+    // console.log(responseInJson[0].name);
+
+    // div.innerText = responseInJson[0].name;
+
+    {
+        responseInJson.map((item) => {
+            let p1 = document.createElement('p');
+            let p2 = document.createElement('p');
+            p1.innerText = item.name;
+            p2.innerText = item.username;
+            div1.appendChild(p1);
+            div2.appendChild(p2);
+        })
+    }
+}
+
+getData();

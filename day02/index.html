@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #main{
+            width: full;
+            display: flex;
+            flex: row;
+            justify-content: start;
+            background-color: aqua;
+        }
+        #div1{
+            width: full;
+            padding-left: 10px;
+            border-right: 1px solid black;
+        }
+        #div2{
+            padding-left: 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="main">
+        <div id="div1"></div>
+        <div id="div2"></div>
+    </div>
 </body>
 <script src="./index.js"></script>
 </html>
