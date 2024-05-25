@@ -9,6 +9,8 @@ function App() {
     age: 23
   };
 
+  const URL = 'http://www.google.com';
+
   return (
     <div className="App">
       <div className="Content">
@@ -25,6 +27,8 @@ function App() {
         <p className="Para0">{ "Hello, Chinthaka" }</p>
         <p className="Para0">{ [1,2,3,4,5] }</p>
         <p className="Para0">{Math.random() * 100 }</p>
+
+        <a href={ URL }>Google Site</a>
       </div>
     </div>
   )
