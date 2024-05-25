@@ -5,8 +5,8 @@ const Home = () => {
         console.log('hey');
     }
 
-    const handelClickEventAgain = (name) => {
-        console.log('hey '+name);
+    const handelClickEventAgain = (name,e) => {
+        console.log('hey '+name,e.target);
     }
 
     return (
@@ -19,9 +19,9 @@ const Home = () => {
             {/* <button onClick={handelClickEvent()} >Click Me</button> */}
 
             {/* How to pass the arguments.... */}
-            <button onClick={() => {
-                handelClickEventAgain('chinthaka')
-            }}>Click Me</button>  
+            <button onClick={(e) => {
+                handelClickEventAgain('chinthaka',e)
+            }}>Click Me</button>
         </div>
     )
 }
