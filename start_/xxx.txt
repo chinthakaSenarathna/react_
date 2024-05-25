@@ -20,3 +20,6 @@
 
 
 -> Component VS Template ???
+
+
+-> Not Doesn't matter, every data types react render -> in string
