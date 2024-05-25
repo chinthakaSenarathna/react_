@@ -19,7 +19,9 @@ const Home = () => {
             {/* <button onClick={handelClickEvent()} >Click Me</button> */}
 
             {/* How to pass the arguments.... */}
-            <button onClick={handelClickEventAgain}>Click Me</button>  
+            <button onClick={() => {
+                handelClickEventAgain('chinthaka')
+            }}>Click Me</button>  
         </div>
     )
 }
