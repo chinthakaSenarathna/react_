@@ -15,4 +15,8 @@
 
 -> main.js/index.js -> all react component MOUNTING them to the DOM
 		    -> all react component Renering them to the DOM
-	    	    -> App compent firstly rendering to the DOM -> ROOT...						
+	    	    -> App compent firstly rendering to the DOM -> ROOT...
+
+
+
+-> Component VS Template ???
