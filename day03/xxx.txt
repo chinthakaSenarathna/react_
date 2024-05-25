@@ -5,3 +5,59 @@
 Event delegation in JavaScript is a technique,
 where you attach a SINGLE EVENT HANDLER TO A PARENT ELEMENT to handle event on its CHILD ELEMENTS.												 
 
+
+-- 02 What is Debouncing ???
+
+The core idea is to wait for a brief period of inactivity before invoking the function.
+
+
+
+-- 03 What is Throttling ???
+
+
+
+
+------------------------ React --------------------------------------
+
+
+-- 01 Virtual DOM VS Real DOM ??? ---> Reconciliation ???
+
+Virtual DOM is lightweight of the Real DOM...
+When data changes, React creates a new Virtual DOM.
+React then compares this new Virtual DOM with the previous one (from the last render)
+The process of comparing and updating the Real DOM based on the differences between the two Virtual DOMs is called reconciliation.
+Only the changed parts of the Virtual DOM are updated in the Real DOM, minimizing unnecessary re-renders.
+
+
+
+-- 02 useState VS useRef ???
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
