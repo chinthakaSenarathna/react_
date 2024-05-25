@@ -6,18 +6,20 @@ const Home = () => {
     // initail value inside the -> useState(initailValue)...
     // array destructuring...
     const [name, setName] = useState('chinthaka');
+    const [age, setAge] = useState(23);
 
     const handelClickEvent = () => {
         // name = 'parami';
         // console.log(name);
         setName('parami');
+        setAge(26);
         // after the setName() run, then trigger the React -> reRender the component...                                
     }
 
     return (
         <div className="home">
             <h2 className="home-title">HomePage</h2>
-            <p className="para0">{ name }</p>
+            <p className="para0">{ name } is { age } years old</p>
             <button onClick={handelClickEvent} >Click Me</button>
         </div>
     )
