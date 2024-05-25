@@ -1,26 +1,22 @@
 import { useState } from 'react'
 
 const Home = () => {
-    // var name = 'chinthaka';
-    // we can use any data types -> useState(dataType)...
-    // initail value inside the -> useState(initailValue)...
-    // array destructuring...
-    const [name, setName] = useState('chinthaka');
-    const [age, setAge] = useState(23);
-
-    const handelClickEvent = () => {
-        // name = 'parami';
-        // console.log(name);
-        setName('parami');
-        setAge(26);
-        // after the setName() run, then trigger the React -> reRender the component...                                
-    }
+    const [blog, setBlog] = useState([
+        { title:'My new website', body:'lorem ipsum...', author:'mario', id:1 },                                                                      
+        { title:'Welcome party!', body:'lorem ipsum...', author:'yoshi', id:2 },
+        { title:'Web dev top tips', body:'lorem ipsum...', author:'mario', id:3 }
+    ]);
 
     return (
         <div className="home">
-            <h2 className="home-title">HomePage</h2>
-            <p className="para0">{ name } is { age } years old</p>
-            <button onClick={handelClickEvent} >Click Me</button>
+            {
+                blog.map((blog,index) => (
+                    <div className='blog-priview' key={index}>
+                        <h2>{ blog.title }</h2>
+                        <p>written by, { blog.author }</p>
+                    </div>
+                ))
+            }
         </div>
     )
 }
