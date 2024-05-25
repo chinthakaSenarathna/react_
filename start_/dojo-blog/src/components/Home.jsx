@@ -1,27 +1,24 @@
-import React from 'react'
+import { useState } from 'react'
 
 const Home = () => {
-    const handelClickEvent = () => {
-        console.log('hey');
-    }
+    // var name = 'chinthaka';
+    // we can use any data types -> useState(dataType)...
+    // initail value inside the -> useState(initailValue)...
+    // array destructuring...
+    const [name, setName] = useState('chinthaka');
 
-    const handelClickEventAgain = (name,e) => {
-        console.log('hey '+name,e.target);
+    const handelClickEvent = () => {
+        // name = 'parami';
+        // console.log(name);
+        setName('parami');
+        // after the setName() run, then trigger the React -> reRender the component...                                
     }
 
     return (
         <div className="home">
             <h2 className="home-title">HomePage</h2>
-            {/* only set the reference */}
-            <button onClick={handelClickEvent} >Click Me</button>                                                                           
-
-            {/* invoke the automatically, without using the onClick Event */}
-            {/* <button onClick={handelClickEvent()} >Click Me</button> */}
-
-            {/* How to pass the arguments.... */}
-            <button onClick={(e) => {
-                handelClickEventAgain('chinthaka',e)
-            }}>Click Me</button>
+            <p className="para0">{ name }</p>
+            <button onClick={handelClickEvent} >Click Me</button>
         </div>
     )
 }
