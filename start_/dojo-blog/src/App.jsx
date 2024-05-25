@@ -1,13 +1,14 @@
-import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const title = "Welcom to the new blog";
 
   return (
     <div className="App">
       <div className="Content">
-        <h1 className="title">App Component</h1>
+        <h1 className="Title">App Component</h1>
+        {/* inside the '{}' react know this is the variable */}
+        <p className="SubTitle">{ title }</p>
       </div>
     </div>
   )
