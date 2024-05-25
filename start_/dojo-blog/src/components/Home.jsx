@@ -10,7 +10,7 @@ const Home = () => {
 
     return (
         <div className="home">
-            <BlogsList blogs={blogs} title={'All Blogs'} />
+            <BlogsList blogs={ blogs } title={ 'All Blogs' } />
         </div>
     )
 }
