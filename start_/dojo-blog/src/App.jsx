@@ -16,9 +16,15 @@ function App() {
         {/* inside the '{}' react know this is the variable */}
         <h2 className="SubTitle">{ title }</h2>
         {/* like data type is 'number' but, but react render that as string */}
-        <p className="Para01">Liked { likes } times</p>
-        <p className="Para02">{ arr }</p>
-        <p className="Para03">{ person }</p>
+        <p className="Para0">Liked { likes } times</p>
+        <p className="Para0">{ arr }</p>
+        {/* Wrrong */}
+        {/* <p className="Para03">{ person }</p> */}
+
+        <p className="Para0">{ 10 }</p>
+        <p className="Para0">{ "Hello, Chinthaka" }</p>
+        <p className="Para0">{ [1,2,3,4,5] }</p>
+        <p className="Para0">{Math.random() * 100 }</p>
       </div>
     </div>
   )
