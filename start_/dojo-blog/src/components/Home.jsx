@@ -8,6 +8,8 @@ const Home = () => {
         { title:'Web dev top tips', body:'lorem ipsum...', author:'mario', id:3 }
     ]);
 
+    const [name, setName] = useState('mario');
+
     const deleteblog = (id) => {
         const newBlogs = blogs.filter((blog) => blog.id != id);
         setBlogs(newBlogs);
@@ -15,13 +17,17 @@ const Home = () => {
 
     // useEffect with dependency array...
     useEffect(() => {
-        console.log("useEffect ran")
-    },[]);
+        console.log("useEffect ran");
+        console.log(name);
+    },[name]);
 
     return (
         <div className="home">
             <BlogsList blogs={ blogs } title={ 'All Blogs' } deleteblog={deleteblog} />
             <BlogsList blogs={ blogs.filter((blog) => blog.author == 'mario') } title={ "Mario's Blogs" } deleteblog={deleteblog} />
+
+            <button onClick={() => setName('chinthaka')}>Change Name</button>
+            <p>{ name }</p>
         </div>
     )
 }
