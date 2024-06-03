@@ -1,7 +1,7 @@
 import React from 'react'
 
 // props object De-structring...
-const BlogsList = ({ blogs, title, deleteblog }) => {
+const BlogsList = ({ blogs, title }) => {
     // const blogs = props.blogs;
     // const title = props.title;
 
@@ -13,9 +13,6 @@ const BlogsList = ({ blogs, title, deleteblog }) => {
                     <div className='blog-priview' key={index}>
                         <h2>{ blog.title }</h2>
                         <p>written by, { blog.author }</p>
-                        <button onClick={() => 
-                            deleteblog(blog.id)
-                        }>Delete</button>
                     </div>
                 ))
             }
