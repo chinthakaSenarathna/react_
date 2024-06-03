@@ -9,15 +9,15 @@ const Home = () => {
         setBlogs(newBlogs);
     }
 
+    const getBlogs = async() => {
+        const res = await fetch('http://localhost:8000/blogs');
+        const data = await res.json();
+        setBlogs(data);
+    }
+
     // useEffect with dependency array...
     useEffect(() => {
-        fetch('http://localhost:8000/blogs')
-            .then((res) => {
-                return res.json();
-            })
-            .then((data) => {
-                setBlogs(data);
-            })
+        getBlogs();
     },[]);
 
     return (
