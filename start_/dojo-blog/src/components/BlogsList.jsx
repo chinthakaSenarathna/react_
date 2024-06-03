@@ -1,15 +1,9 @@
 import React from 'react'
 
 // props object De-structring...
-const BlogsList = ({ blogs, title }) => {
+const BlogsList = ({ blogs, title, deleteblog }) => {
     // const blogs = props.blogs;
     // const title = props.title;
-
-    const deleteblog = (id) => {
-        blogs = blogs.filter((blog) => blog.id != id)
-        console.log(blogs);
-    }
-    // console.log(blogs)
 
     return (
         <div className=''>
