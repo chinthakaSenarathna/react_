@@ -5,6 +5,12 @@ const BlogsList = ({ blogs, title }) => {
     // const blogs = props.blogs;
     // const title = props.title;
 
+    const deleteblog = (id) => {
+        blogs = blogs.filter((blog) => blog.id != id)
+        console.log(blogs);
+    }
+    // console.log(blogs)
+
     return (
         <div className=''>
             <h2>{ title }</h2>
@@ -13,6 +19,9 @@ const BlogsList = ({ blogs, title }) => {
                     <div className='blog-priview' key={index}>
                         <h2>{ blog.title }</h2>
                         <p>written by, { blog.author }</p>
+                        <button onClick={() => 
+                            deleteblog(blog.id)
+                        }>Delete</button>
                     </div>
                 ))
             }
