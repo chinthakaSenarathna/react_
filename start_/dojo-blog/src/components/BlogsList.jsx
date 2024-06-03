@@ -1,5 +1,6 @@
 import React from 'react'
 
+// props object De-structring...
 const BlogsList = ({ blogs, title }) => {
     // const blogs = props.blogs;
     // const title = props.title;
