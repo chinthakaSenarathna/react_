@@ -13,9 +13,10 @@ const Home = () => {
         setBlogs(newBlogs);
     }
 
+    // useEffect with dependency array...
     useEffect(() => {
         console.log("useEffect ran")
-    });
+    },[]);
 
     return (
         <div className="home">
