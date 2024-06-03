@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import BlogsList from './BlogsList';
 
 const Home = () => {
-    const [blogs, setBlogs] = useState([]);
+    const [blogs, setBlogs] = useState(null);
 
     const deleteblog = (id) => {
         const newBlogs = blogs.filter((blog) => blog.id != id);
@@ -22,7 +22,8 @@ const Home = () => {
 
     return (
         <div className="home">
-            <BlogsList blogs={ blogs } title={ 'All Blogs' } deleteblog={deleteblog} />
+            {/* first check the blogs is null...then render the component... */}
+            { blogs && <BlogsList blogs={ blogs } title={ 'All Blogs' } deleteblog={deleteblog} /> }
         </div>
     )
 }
