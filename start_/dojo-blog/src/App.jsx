@@ -9,8 +9,8 @@ function App() {
     <div className="App">
       <NavBar />
       <div className="content">
-        {/* <Home /> */}
-        <TextInputWithFocusButton />
+        <Home />
+        {/* <TextInputWithFocusButton /> */}
       </div>
     </div>
   )
