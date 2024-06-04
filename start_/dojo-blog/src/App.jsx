@@ -1,6 +1,7 @@
 // import './App.css';
 import NavBar from './components/Navbar';
 import Home from './components/Home';
+import TextInputWithFocusButton from './components/TextInputWithFocusButton';
 
 function App() {
 
@@ -8,7 +9,8 @@ function App() {
     <div className="App">
       <NavBar />
       <div className="content">
-        <Home />
+        {/* <Home /> */}
+        <TextInputWithFocusButton />
       </div>
     </div>
   )
