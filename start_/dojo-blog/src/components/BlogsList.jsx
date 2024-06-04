@@ -6,7 +6,7 @@ const BlogsList = ({ blogs, title }) => {
     // const title = props.title;
 
     return (
-        <div className=''>
+        <div className='blog'>
             <h2>{ title }</h2>
             {
                 blogs.map((blog,index) => (
