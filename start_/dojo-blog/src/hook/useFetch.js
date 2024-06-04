@@ -5,28 +5,41 @@ const useFetch = (url) => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    const getBlogs = async() => {
-        try {
-            const res = await fetch(url);
-            // console.log(res);
-            if(!res.ok){
-                throw Error("could not fetch the data from that resource");
-            }
-            const data = await res.json();
-            setData(data);
-            setLoading(false);
-            setError(null);
-        } catch(err){
-            setLoading(false);
-            setError(err.message);
-        }
-    };
-
     // useEffect with dependency array...
     useEffect(() => {
+        const controller = new AbortController();
+
+        const getBlogs = async() => {
+            try {
+                const res = await fetch(url,{ signal: controller.signal } );
+                // console.log(res);
+                if(!res.ok){
+                    throw Error("could not fetch the data from that resource");
+                }
+                const data = await res.json();
+                setData(data);
+                setLoading(false);
+                setError(null);
+            } catch(err){
+                if(err.name === 'AbortError'){
+                    console.log('fetch aborted');
+                }
+                else {
+                    setLoading(false);
+                    setError(err.message);
+                }
+            }
+        };
+
         setTimeout(() => {
             getBlogs();
         },1000);
+
+        return () => {
+            controller.abort();
+            console.log("hey, stop...");
+        }
+
     },[]);
 
     // return Object...
